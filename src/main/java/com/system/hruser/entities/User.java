@@ -15,6 +15,7 @@ public class User implements Serializable {
 
     private String name;
 
+    @Column(unique = true) //não pode ter dois email iguais
     private String email;
 
     private String password;
